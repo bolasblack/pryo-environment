@@ -1,0 +1,15 @@
+{
+  "name": "pryo-example",
+  "version": "1.0.0",
+  "description": "pryo example",
+  "main": "index.js",
+  "license": "MIT",
+  "generator-folder": "./generators",
+  "dependencies": {
+    "pryo": "file:../",
+    "yeoman-generator": "^0.24.1"
+  },
+  "devDependencies": {
+    "generator-angular": "^0.15.1"
+  }
+}

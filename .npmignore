@@ -1,0 +1,8 @@
+example
+coverage
+tslint.json
+lib/*.test.*
+src/*.test.*
+*.config.*
+*.tgz
+.*

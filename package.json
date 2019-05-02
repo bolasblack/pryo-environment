@@ -1,0 +1,49 @@
+{
+  "name": "@pryo/environment",
+  "version": "0.0.1",
+  "description": "Pryo runtime environment",
+  "main": "lib/PryoEnvironment.js",
+  "author": "c4605 <bolasblack@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "github:bolasblack/pryo-environment"
+  },
+  "scripts": {
+    "prepublish": "rm -rf lib && tsc",
+    "test": "NODE_ENV=test jest",
+    "ci": "yarn test --coverage --coverageReporters=text-lcov | coveralls"
+  },
+  "prettier": "@c4605/toolconfs/prettierrc",
+  "dependencies": {
+    "@types/yeoman-environment": "^2.3.0",
+    "debug": "^4.1.1",
+    "find-up": "^3.0.0",
+    "fs-extra": "^7.0.1",
+    "globby": "^9.2.0",
+    "lodash": "^4.17.11",
+    "yargs": "^13.2.2",
+    "yeoman-environment": "^2.3.4"
+  },
+  "devDependencies": {
+    "@c4605/toolconfs": "^0.4.2",
+    "@types/debug": "^4.1.4",
+    "@types/find-up": "^2.1.1",
+    "@types/fs-extra": "^5.0.5",
+    "@types/inquirer": "^6.0.1",
+    "@types/jest": "^24.0.12",
+    "@types/lodash": "^4.14.123",
+    "@types/mem-fs": "^1.1.2",
+    "@types/node": "^11.13.7",
+    "@types/yeoman-generator": "^3.1.1",
+    "coveralls": "^3.0.3",
+    "git-hook-pure": "^1.2.1",
+    "jest": "^24.7.1",
+    "jest-cli": "^24.7.1",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.17.0",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  }
+}
