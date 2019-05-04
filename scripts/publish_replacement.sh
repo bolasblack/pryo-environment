@@ -16,7 +16,7 @@ if [ ! -d $GIT_DIR ]; then
   git clone --bare --depth=1 --branch=$BRANCH $REPO_URL $GIT_DIR
 fi
 
-$GIT fetch origin
+$GIT fetch --prune --prune-tags origin
 
 mkdir -p $WORK_TREE
 $GIT reset --hard
@@ -46,6 +46,10 @@ pkg.name = 'yeoman-environment';
 pkg.version = pkg.replaceVersion;
 fs.writeFileSync('$WORK_TREE/package.json', JSON.stringify(pkg));
 "
+
+yarn
+echo '!node_modules/yeoman-environment' >> ./$WORK_TREE/.gitignore
+cp -r ./node_modules/yeoman-environment ./$WORK_TREE/node_modules/
 
 rm $PACK_FILE
 
