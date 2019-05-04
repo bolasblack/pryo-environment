@@ -46,3 +46,4 @@ jspm_packages
 .publish-*
 coverage
 !node_modules/yeoman-environment
+!node_modules/yeoman-environment

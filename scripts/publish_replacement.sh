@@ -49,7 +49,7 @@ fs.writeFileSync('$WORK_TREE/package.json', JSON.stringify(pkg));
 
 yarn
 echo '!node_modules/yeoman-environment' >> ./$WORK_TREE/.gitignore
-cp -r ./node_modules/yeoman-environment ./$WORK_TREE/node_modules/
+cp -r ./node_modules/yeoman-environment ./$WORK_TREE/node_modules/yeoman-environment
 
 rm $PACK_FILE
 
