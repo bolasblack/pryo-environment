@@ -1,6 +1,7 @@
 {
   "name": "@pryo/environment",
   "version": "0.0.1",
+  "replaceVersion": "2.3.4",
   "description": "Pryo runtime environment",
   "main": "lib/PryoEnvironment.js",
   "author": "c4605 <bolasblack@gmail.com>",
@@ -10,6 +11,7 @@
     "url": "github:bolasblack/pryo-environment"
   },
   "scripts": {
+    "publish-replacement": "yarn prepublish && ./scripts/publish_replacement.sh",
     "prepublish": "rm -rf lib && tsc",
     "test": "NODE_ENV=test jest",
     "ci": "yarn test --coverage --coverageReporters=text-lcov | coveralls"
@@ -22,7 +24,6 @@
     "fs-extra": "^7.0.1",
     "globby": "^9.2.0",
     "lodash": "^4.17.11",
-    "yargs": "^13.2.2",
     "yeoman-environment": "^2.3.4"
   },
   "devDependencies": {

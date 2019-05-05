@@ -1,5 +1,6 @@
 example
 coverage
+scripts
 tslint.json
 lib/*.test.*
 src/*.test.*

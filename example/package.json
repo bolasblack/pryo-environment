@@ -6,10 +6,9 @@
   "license": "MIT",
   "generator-folder": "./generators",
   "dependencies": {
-    "pryo": "file:../",
-    "yeoman-generator": "^0.24.1"
-  },
-  "devDependencies": {
-    "generator-angular": "^0.15.1"
+    "generator-angular": "^0.15.1",
+    "yeoman-environment": "pryojs/environment#replacement",
+    "yeoman-generator": "^0.24.1",
+    "yo": "^2.0.6"
   }
 }
